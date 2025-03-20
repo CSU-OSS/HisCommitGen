@@ -5,7 +5,7 @@ Directory structure
 - /HisCommitGen-JetBrain : Plugin for Jetbrain
 - /HisCommitGen-Server : Server
 
-Demo video address:https://youtu.be/eB5OVh66OOQ
+Demo video address:https://youtu.be/Lmi5WfYwvNE
 
 ## HisCommitGen-JetBrain : Plugin for Jetbrain  
 ### installation:  
