@@ -7,11 +7,11 @@ Directory structure
 
 Demo video address:https://youtu.be/eB5OVh66OOQ
 
-HisCommitGen-JetBrain : Plugin for Jetbrain  
+##HisCommitGen-JetBrain : Plugin for Jetbrain  
 Install via Marketplace:  
-1.Open your JetBrains IDE  
-2.Navigate to Settings/Preferences → Plugins → Marketplace.  
-3.Search for "HisCommitGen" and click Install.  
+  1.Open your JetBrains IDE  
+  2.Navigate to Settings/Preferences → Plugins → Marketplace.  
+  3.Search for "HisCommitGen" and click Install.  
 Configure Settings:  
 ·Go to Settings→ Tools → CMG plunging settings.  
 ·Adjust the following parameters:  
