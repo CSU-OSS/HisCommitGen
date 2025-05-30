@@ -5,7 +5,7 @@ Directory structure
 - /HisCommitGen-JetBrain : Plugin for Jetbrain
 - /HisCommitGen-Server : Server
 
-Demo video address:https://youtu.be/Lmi5WfYwvNE
+Demo video address: https://www.youtube.com/watch?v=Lmi5WfYwvNE
 
 ## HisCommitGen
 
@@ -42,3 +42,34 @@ HisCommitGen supports two workflows: Recommendation (full message generation) an
 | 4     | Highly similar but not identical in semantic.                          |
 | 5     | Identical in semantic.                                                 |
 
+以下是你提供的 LaTeX 内容转换成的 **Markdown 文本与表格**：
+
+---
+
+### Efficacy of different history retrieval methods for *HisCommitGen*
+
+Table 2 below presents the results of using different retrieval methods for *HisCommitGen*.
+
+* **No retrieval** refers to not providing any commit history.
+* **Random retrieval** involves randomly selecting a message from the developer's commit history.
+
+The results show:
+
+* Using no retrieval produces the lowest scores.
+* Random retrieval slightly improves performance.
+* **TF-IDF** and **BM25** are sparse retrieval methods.
+* **CodeT5 embedding** is a dense retriever using cosine similarity on embedded vectors of code changes.
+* All retrieval methods (TF-IDF, BM25, and CodeT5 embedding) significantly enhance performance, yielding similar scores.
+* **BM25** achieves the highest scores across multiple metrics, showing its superiority.
+
+#### Table 2: Efficacy of different history retrieval methods for *HisCommitGen*
+
+| Retrieval Method | BLEU (%) | METEOR (%) | Log-MNEXT (%) |
+| ---------------- | -------- | ---------- | ------------- |
+| No retrieval     | 1.63     | 13.42      | 12.51         |
+| Random           | 2.13     | 15.44      | 12.69         |
+| TF-IDF           | 3.36     | 19.24      | 15.58         |
+| CodeT5 embedding | 3.40     | 19.40      | 15.65         |
+| **BM25**         | **3.42** | **19.60**  | **15.81**     |
+
+---
