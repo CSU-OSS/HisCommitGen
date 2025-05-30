@@ -1,0 +1,40 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>demo</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>Commit Message Generator</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="rambohhh@csu.edu.cn" url="https://www.csu.edu.cn">CSU</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description><![CDATA[A large model-based automatic commit message generation tool that allows you to configure the commit message parameters you need to generate in the exclusive configuration items set.
+  ]]></description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+        <completion.contributor order="first, before commitCompletion" language="any" implementationClass="demo.MyCompletionContributor"/>
+        <applicationConfigurable instance="demo.CmgPlugingSettingConfigurable"/>
+    </extensions>
+    <actions>
+        <action id="myaction.automessageaction" class="demo.AutoMessageGenAction"
+                text="AutomaticCommitMessageGeneration" description="Automatic commit message generation"
+                icon="AllIcons.Actions.EditSource"
+        >
+            <add-to-group group-id="ChangesView.CommitToolbar" anchor="last"/>
+        </action>
+    </actions>
+    <extensions defaultExtensionNs="com.intellij">
+        <!--        <applicationService serviceImplementation="demo.MyService"/>-->
+    </extensions>
+</idea-plugin>
