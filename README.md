@@ -7,10 +7,12 @@ Directory structure
 
 Demo video address:https://youtu.be/Lmi5WfYwvNE
 
-## HisCommitGen-JetBrain : Plugin for Jetbrain  
+## HisCommitGen
+
+
 ### installation:  
-1. Open your JetBrains IDE  
-2. Navigate to Settings/Preferences → Plugins → Marketplace.  
+1. Open your VSCode IDE  
+2. Navigate to Extensions → Marketplace.  
 3. Search for "HisCommitGen" and click Install.
 
 ### Configure Settings:  
@@ -24,6 +26,6 @@ Adjust the following parameters:
 HisCommitGen supports two workflows: Recommendation (full message generation) and Completion (prefix-based suggestions).
 1. Commit Message Recommendation  
   Scenario: Generate commit messages from scratch after code changes.  
-  A list of 5 recommended messages will appear. Use arrow keys to navigate and press Enter to apply.  
+  A list of 5 recommended messages will appear. Use the arrow keys to navigate and press Enter to apply.  
 2. Commit Message Completion  
   Scenario: Auto-complete a message based on a partial prefix.  
