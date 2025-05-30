@@ -28,4 +28,17 @@ HisCommitGen supports two workflows: Recommendation (full message generation) an
   Scenario: Generate commit messages from scratch after code changes.  
   A list of 5 recommended messages will appear. Use the arrow keys to navigate and press Enter to apply.  
 2. Commit Message Completion  
-  Scenario: Auto-complete a message based on a partial prefix.  
+  Scenario: Auto-complete a message based on a partial prefix.
+
+
+### Scoring criterion for hunman evaluation
+
+| Score | Definition                                                              |
+|-------|-------------------------------------------------------------------------|
+| 0     | Neither relevant in semantic nor having shared tokens.                 |
+| 1     | Irrelevant in semantic but with some shared tokens.                    |
+| 2     | Partially similar in semantic, but each contains exclusive information.|
+| 3     | Relevant in semantic.                                                  |
+| 4     | Highly similar but not identical in semantic.                          |
+| 5     | Identical in semantic.                                                 |
+
