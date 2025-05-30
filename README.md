@@ -42,9 +42,6 @@ HisCommitGen supports two workflows: Recommendation (full message generation) an
 | 4     | Highly similar but not identical in semantic.                          |
 | 5     | Identical in semantic.                                                 |
 
-以下是你提供的 LaTeX 内容转换成的 **Markdown 文本与表格**：
-
----
 
 ### Efficacy of different history retrieval methods for *HisCommitGen*
 
@@ -72,4 +69,3 @@ The results show:
 | CodeT5 embedding | 3.40     | 19.40      | 15.65         |
 | **BM25**         | **3.42** | **19.60**  | **15.81**     |
 
----
