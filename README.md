@@ -9,6 +9,10 @@ Demo video address: https://www.youtube.com/watch?v=Lmi5WfYwvNE
 
 ## HisCommitGen
 
+For VSCode, you can search "HisCommitGen" on the extension market to install it. Since the limit of the cloud server, we only deployed a version that uses our private DeepSeek API. So the API usage is limited, and this version can only be used to experience the function of HisCommitGen (The response time of DeepSeek API is long, so be patient waitting for the generated results **:sweat_smile:**). In the future, we will remove the "HisCommitGen-Server" and let the user fill their own API keys on the local machine.
+
+**:bowtie:Due to the plugin audit mechanism of JetBrains, we didn't publish HisCommitGen to JetBrains' Market. You can download the project and run it on local machine.**
+
 
 ### installation:  
 1. Open your VSCode IDE  
@@ -22,6 +26,7 @@ Adjust the following parameters:
 + Generate more recommendation messages：5 by default, you can increase the number after this function is enabled.  
 + temperature: Controls randomness (0.0–1.0; lower values = more deterministic).  
 + maxTokens: Maximum length of generated messages.
+ 
 ### Usage  
 HisCommitGen supports two workflows: Recommendation (full message generation) and Completion (prefix-based suggestions).
 1. Commit Message Recommendation  
