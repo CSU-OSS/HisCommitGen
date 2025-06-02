@@ -74,3 +74,6 @@ The results show:
 | CodeT5 embedding | 3.40     | 19.40      | 15.65         |
 | **BM25**         | **3.42** | **19.60**  | **15.81**     |
 
+## 🤝 Contributing
+Contributions are welcome! Whether it's fixing bugs, adding features, improving documentation, or offering suggestions — we appreciate your help.
+
